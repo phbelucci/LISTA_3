@@ -1,0 +1,127 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+
+int main(){
+
+
+    typedef struct {
+        int codigo;
+        char descr[30];
+        float preco_custo;
+        float preco_venda;
+        int qtd_estoque;
+    } Produtos;
+
+    typedef struct {
+        int registro;
+        char prod_vend;
+        int qtd_venda;
+        float total_venda;
+        char pgto;
+    } Vendas;
+
+    Produtos prod[10][5];
+
+    setlocale (LC_ALL, "");
+
+    int cont_pl = 0;
+    int cont_pc = 0;
+
+    char opcao_venda;
+
+    printf("****************** CADASTRAMENTO DE PRODUTO ******************\n\n");
+    for (cont_pl = 0; cont_pl <1arr ; cont_pl ++){
+        for (cont_pc = 0; cont_pc <5 ; cont_pc ++){
+
+
+            switch (cont_pc){
+                case 0:
+                    prod[cont_pl][cont_pc].codigo = cont_pl;
+                    printf("CÓD PRODUTO: %i\n\n", prod[cont_pl][cont_pc].codigo+1);
+                    break;
+                case 1:
+                    printf("Digite o nome do produto: \n");
+                    scanf("%s", &prod[cont_pl][cont_pc].descr);
+                    break;
+                case 2:
+                    printf("Digite o valor de custo do produto: \n");
+                    scanf("%f", &prod[cont_pl][cont_pc].preco_custo);
+                    break;
+                case 3:
+                    printf("Digite o valor de venda do produto: \n");
+                    scanf("%f", &prod[cont_pl][cont_pc].preco_venda);
+                    break;
+                case 4:
+                    printf("Digite a quantidade de estoque: \n");
+                    scanf("%i", &prod[cont_pl][cont_pc].qtd_estoque);
+                    break;
+            }
+
+        }
+
+    system ("cls");
+    printf("****************** CADASTRAMENTO DE PRODUTO ******************\n\n");
+
+    }
+    system ("cls");
+    printf("****************** CADASTRAMENTO FINALIZADO******************\n\n");
+
+
+    //************* FINALIZA CADASTRAMENTO DE PRODUTOS *******************
+
+
+    printf("Deseja realizar uma venda? [S/N]: ");
+    scanf(" %c", &opcao_venda);
+    opcao_venda = toupper(opcao_venda);
+
+    if (opcao_venda == 'N'){
+        return 1; // FINALIZA PROGRAMA - SEM ENTRAR EM VEDAS
+
+
+    // ****************** INICIA SISTEMA DE VENDAS *************************
+    } else {
+
+        system ("cls");
+        printf("************** BEM VINDO **************\n\n");
+        printf("************** SISTEMA DE VENDAS **************");
+
+        printf("PRODUTOS DISPONIVEIS: ");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+return 0;
+
+}
